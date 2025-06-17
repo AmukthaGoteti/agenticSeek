@@ -22,6 +22,8 @@ services:
         max-file: "1"
     networks:
       - agentic-seek-net
+    env_file:
+      - .env
 
   searxng:
     container_name: searxng
